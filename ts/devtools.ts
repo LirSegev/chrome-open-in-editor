@@ -22,6 +22,8 @@ function onSelectionChanged(
 				clearTimeout(timeoutId);
 				callOpenFile();
 			}
+
+			chrome.devtools.panels.openResource(url, 0, () => {});
 		}
 	}
 }
