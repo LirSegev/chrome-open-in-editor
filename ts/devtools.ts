@@ -3,6 +3,11 @@
  */
 const ACTIVE_TIME = 1.5;
 
+/**
+ * Default port used to communicate with editor extension
+ */
+const DEFAULT_PORT = 27182;
+
 let timeoutId: any = undefined;
 
 function onSelectionChanged(
@@ -34,10 +39,15 @@ function onSelectionChanged(
 }
 
 function openFile(path: string, line?: number, column?: number) {
-	console.log({
-		path,
-		line,
-		column,
+	const body: any = { path };
+	// prettier-ignore
+	if(line) {body.line = line;}
+	// prettier-ignore
+	if(column) {body.column = column;}
+
+	fetch(`http://localhost:${DEFAULT_PORT}`, {
+		method: 'POST',
+		body: JSON.stringify(body),
 	});
 	deactivate();
 }
