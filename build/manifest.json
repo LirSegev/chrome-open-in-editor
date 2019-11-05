@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+
+	"name": "Open In Editor",
+	"version": "0.0.1",
+
+	"description": "",
+	"author": "Lir",
+
+	"devtools_page": "html/devtools.html",
+	"commands": {
+		"activate": {
+			"suggested_key": {
+				"default": "Alt+Shift+Z"
+			},
+			"description": "Activate Open In Editor"
+		}
+	}
+}

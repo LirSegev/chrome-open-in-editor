@@ -1,0 +1,25 @@
+{
+	"name": "chrome-open-in-editor",
+	"displayName": "Open In Editor",
+	"version": "0.0.1",
+	"description": "",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LirSegev/chrome-open-in-editor.git"
+	},
+	"scripts": {
+		"start": "tsc -w",
+		"build": "tsc -b"
+	},
+	"author": "Lir Segev",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/LirSegev/chrome-open-in-editor/issues"
+	},
+	"homepage": "https://github.com/LirSegev/chrome-open-in-editor#readme",
+	"devDependencies": {
+		"@types/chrome": "0.0.91",
+		"tslint": "^6.0.0-beta0",
+		"typescript": "^3.6.4"
+	}
+}
